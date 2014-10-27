@@ -36,11 +36,11 @@ $aModule = array(
     'version'     => '1.0',
     'author'      => 'OXID eSales AG',
     'extend'      => array(
-        'oxorder'        => 'oe/invoicepdf/models/invoicepdfoxorder',
-        'order_overview' => 'oe/invoicepdf/controllers/admin/invoicepdforder_overview'
+        'oxorder'        => 'invoicepdf/models/invoicepdfoxorder',
+        'order_overview' => 'invoicepdf/controllers/admin/invoicepdforder_overview'
     ),
     'files'       => array(
-        'InvoicepdfBlock'          => 'oe/invoicepdf/models/invoicepdfblock.php',
+        'InvoicepdfBlock'          => 'invoicepdf/models/invoicepdfblock.php',
         'InvoicepdfArticleSummary' => 'oe/invoicepdf/models/invoicepdfarticlesummary.php'
     ),
     'blocks'      => array(
