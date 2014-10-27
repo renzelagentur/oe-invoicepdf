@@ -1,0 +1,13 @@
+{
+    "name": "oe/invoicepdf",
+    "description": "Module to export invoice PDF files.",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Robin Lehrmann",
+            "email": "robin@snow-hamster.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
