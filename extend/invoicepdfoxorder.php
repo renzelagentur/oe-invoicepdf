@@ -592,6 +592,20 @@ class InvoicepdfOxOrder extends InvoicepdfOxOrder_parent
         $oPdf->setFont($oPdfBlock->getFont(), '', 10);
         $text = $this->translate('ORDER_OVERVIEW_PDF_PAYUPTO') . date('d.m.Y', strtotime('+' . $this->getPaymentTerm() . ' day', strtotime($this->oxorder__oxbilldate->value)));
         $oPdf->text(15, $siteH + 4, $text);
+
+        //order notice
+        //@todo actually text is outdated!
+        $oPdf->setFont($oPdfBlock->getFont(), '', 8);
+        $oPdf->text(15, $siteH + 14, $this->translate('WHAT_I_WANTED_TO_SAY'));
+
+        $aMessage = explode(".", $this->oxorder__oxremark->value);
+        $iNoteStartPos = 18;
+
+        foreach($aMessage as $sNotePart) {
+            $oPdf->text(15, $siteH + $iNoteStartPos, trim($sNotePart).".");
+            $iNoteStartPos = $iNoteStartPos + 4;
+        }
+
     }
 
     /**
