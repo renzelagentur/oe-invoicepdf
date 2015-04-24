@@ -15,9 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with OXID eShop Community Edition.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @link      http://www.oxid-esales.com
+ * @link          http://www.oxid-esales.com
  * @copyright (C) OXID eSales AG 2003-2014
- * @version   OXID eShop CE
+ * @version       OXID eShop CE
  */
 
 /**
@@ -38,6 +38,10 @@ $aModule = array(
     'extend'      => array(
         'oxorder'        => 'oe/invoicepdf/extend/invoicepdfoxorder',
         'order_overview' => 'oe/invoicepdf/extend/invoicepdforder_overview'
+    ),
+    'files'       => array(
+        'invoicepdfarticlesummary' => 'oe/invoicepdf/models/invoicepdfarticlesummary.php',
+        'invoicepdfblock'          => 'oe/invoicepdf/models/invoicepdfblock.php',
     ),
     'blocks'      => array(
         array(

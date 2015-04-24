@@ -1,7 +1,7 @@
 [{$smarty.block.parent}]
 [{if $edit && $oView->canExport() }]
     <br>
-    <form name="myedit2" id="myedit2" action="[{$oViewConf->getSelfLink() }]" method="post" target="expPDF">
+    <form name="myedit2" id="myedit2" action="[{$oViewConf->getSelfLink() }]" method="post">
         [{$oViewConf->getHiddenSid() }]
         <input type="hidden" name="cl" value="order_overview">
         <input type="hidden" name="fnc" value="createPDF">
