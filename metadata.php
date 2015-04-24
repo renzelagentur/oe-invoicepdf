@@ -36,8 +36,8 @@ $aModule = array(
     'version'     => '1.0',
     'author'      => 'OXID eSales AG',
     'extend'      => array(
-        'oxorder'        => 'invoicepdf/extend/invoicepdfoxorder',
-        'order_overview' => 'invoicepdf/extend/invoicepdforder_overview'
+        'oxorder'        => 'oe/invoicepdf/extend/invoicepdfoxorder',
+        'order_overview' => 'oe/invoicepdf/extend/invoicepdforder_overview'
     ),
     'blocks'      => array(
         array(
