@@ -176,10 +176,10 @@ class InvoicepdfOxOrder extends InvoicepdfOxOrder_parent
 
         //logo
         $myConfig = $this->getConfig();
-        $aSize = getimagesize($myConfig->getImageDir() . '/pdf_logo.jpg');
+        $aSize = getimagesize($myConfig->getImageDir() . '/' . $myConfig->getConfigParam('sEmailLogo'));
         $iMargin = 195 - $aSize[0] * 0.2;
         $oPdf->setLink($oShop->oxshops__oxurl->value);
-        $oPdf->image($myConfig->getImageDir() . '/pdf_logo.jpg', $iMargin, 10, $aSize[0] * 0.2, $aSize[1] * 0.2, '', $oShop->oxshops__oxurl->value);
+        $oPdf->image($myConfig->getImageDir() . '/' . $myConfig->getConfigParam('sEmailLogo'), $iMargin, 10, $aSize[0] * 0.2, $aSize[1] * 0.2, '', $oShop->oxshops__oxurl->value);
 
         return 14 + $aSize[1] * 0.2;
     }

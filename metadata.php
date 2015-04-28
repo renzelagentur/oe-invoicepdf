@@ -50,4 +50,7 @@ $aModule = array(
             'file'     => 'views/admin/blocks/order_overview.tpl'
         ),
     ),
+    'settings'    => array(
+        array('group' => 'invoicepdfsettings', 'name' => 'sEmailLogo',   'type' => 'str',  'value' => '')
+    ),
 );
